@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+    background: #33899a;
+}
+.container {
+    background: white;
+    border-radius: 25px;
+}
+@media (max-width:960px) {
+    .container {
+        border-radius: 0;
+    }
+}
+.logo {
+    padding-top: 15px;
+}
+dl {
+    margin: 0;
+    padding: 10px 0;
+}
+dt, dd {
+    text-align: left;
+    padding: 5px 0;
+}
+dt {
+    line-height: 1.5;
+    font-size: 20px;
+}
+dd {
+    margin: 0;
+    padding-left: 40px;
+    border-bottom: 1px solid #33899a;
+}
+dt span {
+    padding: 5px 0;
+}
+#github-projects, #github-contributors {
+    display: inline-flex;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.statistics-wrapper {
+    display: flex;
+}
+@media (max-width:600px) {
+    .statistics-wrapper {
+        display: inherit;
+    }
+    #github-projects, #github-contributors {
+        display: block;
+    }
+}
+.content-wrapper {
+    width: 100%;
+}
